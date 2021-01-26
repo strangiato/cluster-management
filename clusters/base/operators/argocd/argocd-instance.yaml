@@ -12,5 +12,4 @@ spec:
       enabled: true
   statusBadgeEnabled: true
   rbac:
-    policy: |
-      g, system:cluster-admins:admin
+    defaultPolicy: admin
