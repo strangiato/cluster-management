@@ -11,3 +11,6 @@ spec:
     route:
       enabled: true
   statusBadgeEnabled: true
+  rbac:
+    policy: |
+      g, system:cluster-admins:admin
