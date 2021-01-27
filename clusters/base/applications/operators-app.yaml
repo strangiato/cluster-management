@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-management-operators
+  labels:
+    app.kubernetes.io/instance: cluster-management
+spec:
+  destination:
+    namespace: cluster-management
+    server: 'https://api.cluster-0183.0183.example.opentlc.com:6443'
+  source:
+    path: clusters/overlays/4.5/operators
+    repoURL: 'https://github.com/strangiato/cluster-management.git'
+    targetRevision: main
