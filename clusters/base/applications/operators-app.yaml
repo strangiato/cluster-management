@@ -13,3 +13,6 @@ spec:
     path: clusters/overlays/4.5/operators
     repoURL: 'https://github.com/strangiato/cluster-management.git'
     targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
