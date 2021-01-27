@@ -7,4 +7,5 @@ resources:
   - argocd-instance.yaml
   - argocd-ns.yaml
   - operator-group.yaml
+  - sa-cluster-admin.yaml
   - subscription.yaml
