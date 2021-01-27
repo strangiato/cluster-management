@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - applications-app.yaml
-  - operator-app.yaml
+  - operators-app.yaml
