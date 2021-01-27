@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-management
+  labels:
+    app.kubernetes.io/instance: cluster-management
+spec:
+  destination:
+    namespace: cluster-management
+    server: {{ .Values.spec.destination.server }}
+  source:
+    path: {{ .Values.spec.source.base-path }}/applications
+    repoURL: 'https://github.com/strangiato/cluster-management.git'
+    targetRevision: main
