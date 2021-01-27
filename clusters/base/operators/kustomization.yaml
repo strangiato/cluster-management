@@ -3,7 +3,7 @@ kind: Kustomization
 
 bases:
 - ./amq-streams
-- ./argo
+- ./argocd
 - ./ocs
 - ./odh
 - ./pipelines
