@@ -8,6 +8,7 @@ spec:
   destination:
     namespace: argocd
     server: 'https://api.cluster-0183.0183.example.opentlc.com:6443'
+  project: cluster-management
   source:
     path: clusters/overlays/4.5/operators
     repoURL: 'https://github.com/strangiato/cluster-management.git'
