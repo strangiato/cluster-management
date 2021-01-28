@@ -6,9 +6,9 @@ The intention is that this will allow you to easily bootstrap an ArgoCD instance
 
 ## Components
 
-AMQ-Streams
-ArgoCD
-OpenShift Container Storage
-OpenDataHub
-OpenShift Pipelines
-Serverless
+- AMQ-Streams
+- ArgoCD
+- OpenShift Container Storage
+- OpenDataHub
+- OpenShift Pipelines
+- Serverless
