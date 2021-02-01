@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: kogito-operator
 spec:
-  channel: 1.x
+  channel: alpha
   installPlanApproval: Automatic
   name: kogito-operator
   source: community-operators
