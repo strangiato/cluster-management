@@ -4,6 +4,7 @@ kind: Kustomization
 bases:
 - ./amq-streams
 - ./argocd
+- ./kogito
 - ./ocs
 - ./odh
 - ./pipelines
