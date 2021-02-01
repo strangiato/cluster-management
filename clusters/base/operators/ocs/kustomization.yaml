@@ -4,6 +4,9 @@ kind: Kustomization
 namespace: openshift-storage
 
 resources:
+  - noobaa-default-backing-store.yaml
+  - noobaa-default-bucket-class.yaml
+  - ocs-storagecluster.yaml
   - openshift-storage-ns.yaml
   - operator-group.yaml
   - subscription.yaml
