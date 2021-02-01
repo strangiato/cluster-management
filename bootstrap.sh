@@ -7,6 +7,8 @@ cluster_address="default/api-cluster-0183-0183-example-opentlc-com:6443/opentlc-
 # install the argo operator
 oc apply -k "${argo_folder}"
 
+# need to configure the git repo tokens
+
 # configure the cluster with argo
 argocd login --sso "${argo_address}"
 argocd cluster add "${cluster_address}"
