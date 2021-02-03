@@ -5,7 +5,7 @@ bases:
 - ./amq-streams
 - ./argocd
 - ./kogito
-- ./ocs
+#- ./ocs
 - ./odh
 - ./pipelines
 - ./serverless
