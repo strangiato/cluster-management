@@ -6,6 +6,6 @@ metadata:
 spec:
     channel:
         bootstrapServers: ''
-        enabled: true 
+        enabled: false 
     source:
         enabled: true 
