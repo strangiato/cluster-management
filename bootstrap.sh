@@ -2,6 +2,36 @@
 
 LANG=C
 SLEEP_SECONDS=45
+VERSION="4.7"
+
+PS3='Select OpenShift Version: '
+options=("4.3" "4.4" "4.5" "4.6" "4.7")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "4.3")
+            VERSION=$opt
+            break
+            ;;
+        "4.4")
+            VERSION=$opt
+            break
+            ;;
+        "4.5")
+            VERSION=$opt
+            break
+            ;;
+        "4.6")
+            VERSION=$opt
+            break
+            ;;
+        "4.7")
+            VERSION=$opt
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
 echo ""
 echo "Creating ArgoCD Project"
@@ -38,4 +68,4 @@ echo "Argo CD ready!"
 
 echo "Adding initial applications"
 
-oc apply -k cluster-overlays/4.5/applications/
+oc apply -k cluster-overlays/${VERSION}/applications/
