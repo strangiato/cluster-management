@@ -8,4 +8,4 @@ spec:
         bootstrapServers: ''
         enabled: false 
     source:
-        enabled: true 
+        enabled: true

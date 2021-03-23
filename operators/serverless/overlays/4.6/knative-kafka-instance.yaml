@@ -5,6 +5,7 @@ metadata:
     namespace: knative-eventing
 spec:
     channel:
-        enabled: true 
+        bootstrapServers: ''
+        enabled: false 
     source:
-        enabled: true 
+        enabled: true
