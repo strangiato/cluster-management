@@ -4,8 +4,8 @@ kind: Kustomization
 bases:
   - ../../base
 
-resources:
-  - knative-kafka-instance.yaml
+# resources:
+#   - knative-kafka-instance.yaml
 
 patchesJson6902:
 - target:
