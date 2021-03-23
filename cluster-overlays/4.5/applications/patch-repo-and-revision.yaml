@@ -3,4 +3,4 @@
   value: 'https://github.com/strangiato/cluster-management.git'
 - op: replace
   path: /spec/source/targetRevision
-  value: external-repos
+  value: main
