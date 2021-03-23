@@ -3,5 +3,5 @@ kind: Kustomization
 
 namespace: openshift-operators
 
-resources:
-  - subscription.yaml
+bases:
+  - github.com/redhat-canada-gitops/catalog/amq-streams-operator/overlays/stable?ref=master
