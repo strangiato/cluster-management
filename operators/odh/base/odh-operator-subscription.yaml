@@ -3,9 +3,9 @@ kind: Subscription
 metadata:
   name: opendatahub-operator
 spec:
-  channel: beta
+  channel: patch-me-see-overlays-dir
   installPlanApproval: Automatic
   name: opendatahub-operator
   source: community-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: opendatahub-operator.v0.9.0
+  startingCSV: patch-me-see-overlays-dir

@@ -5,6 +5,3 @@ namespace: openshift-operators
 
 bases:
   - github.com/redhat-canada-gitops/catalog/openshift-pipelines-operator/overlays/stable?ref=master
-
-# resources:
-#   - subscription.yaml
