@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- github.com/redhat-canada-gitops/argocd/argocd/overlays/default?ref=master
+- github.com/redhat-canada-gitops/argocd/argocd-operator/overlays/default?ref=master

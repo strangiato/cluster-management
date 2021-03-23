@@ -13,7 +13,7 @@ echo ""
 echo "Installing Argo CD Operator."
 
 #oc apply -k clusters/base/operators/argocd/argocd-operator/
-kustomize build clusters/base/operators/argocd/argocd-operator/ | oc apply -f -
+kustomize build operators/argocd/argocd-operator/ | oc apply -f -
 
 echo "Pause $SLEEP_SECONDS seconds for the creation and approval of the InstallPlan."
 sleep $SLEEP_SECONDS
@@ -26,7 +26,7 @@ oc get crd | grep argo
 echo "Deploying Argo CD instance"
 
 # oc apply -k clusters/base/operators/argocd/argocd/
-kustomize build clusters/base/operators/argocd/argocd/ | oc apply -f -
+kustomize build operators/argocd/argocd/ | oc apply -f -
 
 echo "Waiting for Argo CD server to start..."
 
@@ -38,4 +38,4 @@ echo "Argo CD ready!"
 
 echo "Adding initial applications"
 
-oc apply -k clusters/overlays/4.5/applications/
+oc apply -k clusters-overlays/4.5/applications/
