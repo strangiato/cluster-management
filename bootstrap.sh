@@ -38,4 +38,4 @@ echo "Argo CD ready!"
 
 echo "Adding initial applications"
 
-oc apply -k clusters-overlays/4.5/applications/
+oc apply -k cluster-overlays/4.5/applications/
