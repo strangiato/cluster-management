@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/channel
+  value: 'alpha'
+- op: replace
+  path: /spec/startingCSV
+  value: kogito-operator.v1.4.0
