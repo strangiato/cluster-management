@@ -7,5 +7,5 @@ bases:
 - ../../../operators/pipelines/
 - ../../../operators/serverless/overlays/4.7
 - ../../../operators/kogito/overlays/1.x
-- ../../../operators/openshift-container-storage-noobaa
+#- ../../../operators/openshift-container-storage-noobaa
 - ../../../operators/openshift-container-storage-operator
