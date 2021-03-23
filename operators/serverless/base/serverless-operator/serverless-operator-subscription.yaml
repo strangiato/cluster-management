@@ -3,9 +3,9 @@ kind: Subscription
 metadata:
   name: serverless-operator
 spec:
-  channel: '4.5'
+  channel: patch-me-see-overlays-dir
   installPlanApproval: Automatic
   name: serverless-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: serverless-operator.v1.10.0
+  startingCSV: patch-me-see-overlays-dir
