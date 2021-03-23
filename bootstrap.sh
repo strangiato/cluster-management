@@ -36,4 +36,6 @@ oc rollout status deploy/argocd-server -n argocd
 
 echo "Argo CD ready!"
 
-# oc apply -k clusters/overlays/
+echo "Adding initial applications"
+
+oc apply -k clusters/overlays/4.5/applications/
