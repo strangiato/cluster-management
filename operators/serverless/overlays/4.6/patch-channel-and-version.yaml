@@ -3,4 +3,4 @@
   value: 4.6
 - op: replace
   path: /spec/startingCSV
-  value: opendatahub-operator.v1.10.0
+  value: serverless-operator.v1.13.0
