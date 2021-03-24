@@ -12,7 +12,7 @@ jobs:
         uses: karancode/kustomize-github-action@master
         with:
           kustomize_version: '3.6.1'
-          kustomize_build_dir: 'cluster-overlays/4.7/applications/'
+          kustomize_build_dir: './cluster-overlays/4.7/applications/'
           kustomize_comment: true
           kustomize_build_options: "--load_restrictor none"
           enable_alpha_plugins: true
