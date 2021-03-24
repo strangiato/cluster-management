@@ -3,6 +3,9 @@ kind: Kustomization
 
 namespace: knative-eventing
 
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "5"
+
 resources:
   - knative-eventing-instance.yaml
   - knative-eventing-namespace.yaml

@@ -3,5 +3,8 @@ kind: Kustomization
 
 namespace: openshift-storage
 
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "3"
+
 resources:
   - storagecluster.yaml
