@@ -20,6 +20,7 @@ kustomize build manifests/operators/opendatahub-operator/overlays/beta
 kustomize build manifests/operators/openshift-container-storage-operator 
 kustomize build manifests/operators/openshift-pipelines-operator
 
+# Validate the serverless overlays
 for i in 4.3 4.4 4.5 4.6 4.7
 do
 kustomize build manifests/operators/openshift-serverless-operator/overlays/${i}
