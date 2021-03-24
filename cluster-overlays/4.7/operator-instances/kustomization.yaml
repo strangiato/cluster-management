@@ -4,6 +4,6 @@ kind: Kustomization
 bases:
 # - ../../../manifests/operator-instances/openshift-container-storage-noobaa
 # - ../../../manifests/operator-instances/openshift-container-storage-rgw
-# - ../../../manifests/operator-instances/openshift-container-storage-storagecluster
+- ../../../manifests/operator-instances/openshift-container-storage-storagecluster
 - ../../../manifests/operator-instances/openshift-serverless-knative-eventing/overlays/knative-kafka
 - ../../../manifests/operator-instances/openshift-serverless-knative-serving/overlays/default
