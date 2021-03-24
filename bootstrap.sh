@@ -43,7 +43,7 @@ echo ""
 echo "Installing Argo CD Operator."
 
 #oc apply -k clusters/base/operators/argocd/argocd-operator/
-kustomize build operators/argocd/argocd-operator/ | oc apply -f -
+kustomize build manifests/operators/argocd-operator/ | oc apply -f -
 
 echo "Pause $SLEEP_SECONDS seconds for the creation and approval of the InstallPlan."
 sleep $SLEEP_SECONDS
@@ -56,7 +56,7 @@ oc get crd | grep argo
 echo "Deploying Argo CD instance"
 
 # oc apply -k clusters/base/operators/argocd/argocd/
-kustomize build operators/argocd/argocd/ | oc apply -f -
+kustomize build manifests/operator-instances/argocd/ | oc apply -f -
 
 echo "Waiting for Argo CD server to start..."
 

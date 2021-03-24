@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+- ../../../manifests/operators/amq-streams-operator
+- ../../../manifests/operators/kogito/overlays/1.x
+- ../../../manifests/operators/opendatahub-operator/overlays/beta
+- ../../../manifests/operators/openshift-container-storage-operator
+- ../../../manifests/operators/openshift-pipelines-operator/
+- ../../../manifests/operators/openshift-serverless-operator/overlays/4.7
