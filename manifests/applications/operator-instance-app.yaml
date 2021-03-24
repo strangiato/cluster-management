@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-management-operator-instances
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: patch-me-see-overlays-dir
+    repoURL: patch-me-see-overlays-dir
+    targetRevision: patch-me-see-overlays-dir
+  project: default
+  syncPolicy:
+    automated:
+      selfHeal: true
