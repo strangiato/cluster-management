@@ -6,8 +6,7 @@ namespace: openshift-storage
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "3"
 
-bases:
-  - ./openshift-container-storage-node-labeler
-
 resources:
-  - storagecluster.yaml
+  - node-label-job.yaml
+  - rbac.yaml
+  - service-account.yaml

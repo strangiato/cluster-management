@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: storage-cluster-label-worker-nodes
+  generateName: storage-cluster-label-worker-nodes-
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: labeler
+        image: image-registry.openshift-image-registry.svc:5000/openshift/cli
+        command:
+          - /bin/bash
+          - -c
+          - |
+            echo "Labling the following nodes"
+            oc get nodes --selector='node-role.kubernetes.io/worker'
+            oc label nodes --selector='node-role.kubernetes.io/worker' cluster.ocs.openshift.io/openshift-storage=""
+      restartPolicy: Never
+      serviceAccount: ocs-node-labeler
+      serviceAccountName: ocs-node-labeler
+  backoffLimit: 4
