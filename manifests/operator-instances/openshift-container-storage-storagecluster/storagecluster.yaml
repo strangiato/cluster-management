@@ -7,8 +7,7 @@ metadata:
   name: ocs-storagecluster
   namespace: openshift-storage
 spec:
-  encryption:
-    enable: true
+  encryption: {}
   externalStorage: {}
   managedResources:
     cephBlockPools: {}
