@@ -3,9 +3,9 @@ kind: Job
 metadata:
   name: storage-cluster-label-worker-nodes
   generateName: storage-cluster-label-worker-nodes-
-  # annotations:
-  #   argocd.argoproj.io/hook: Sync
-    # argocd.argoproj.io/hook-delete-policy: HookSucceeded
+  annotations:
+    argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
