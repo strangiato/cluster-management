@@ -8,4 +8,4 @@ commonAnnotations:
 
 resources:
   - knative-eventing-instance.yaml
-  - knative-eventing-namespace.yaml
+#  - knative-eventing-namespace.yaml

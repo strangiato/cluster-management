@@ -8,4 +8,4 @@ commonAnnotations:
 
 resources:
   - knative-serving-instance.yaml
-  - knative-serving-namespace.yaml
+#  - knative-serving-namespace.yaml
