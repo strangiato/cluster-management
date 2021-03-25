@@ -47,3 +47,10 @@ The cluster may take 10-15 minutes to finish installing and updating.
 ### Known Issues
 
 The current sync operations may get stuck and fail to deploy all of the components (generally the `cluster-management-operator-resources` app).  To resolve the issue navigate to the ArgoCD Operator page under `Installed Operators` in the ArgoCD namespace.  Under `Application` tab delete the `cluster-management-operator-resouces` application.  It should automatically recreate and restart the sync process.
+
+## Future Enhacements Opportunties
+
+- Add and test additional ocp versions and platforms
+- Add the sealed secrets operator
+- Add the ability to deploy from a private repository
+- Add automated testing of resouces with CI
