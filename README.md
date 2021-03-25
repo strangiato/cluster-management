@@ -6,19 +6,20 @@ The intention is that this will allow you to easily bootstrap an ArgoCD instance
 
 ## Components
 
-- AMQ-Streams
+- AMQ-Streams Operator
 - ArgoCD
-- OpenShift Container Storage
-- OpenDataHub
-- OpenShift Pipelines
-- OpenShift Serverless
+- Kogito Operator
+- OpenShift Container Storage Operator
+- OpenDataHub Operator
+- OpenShift Pipelines Operator
+- OpenShift Serverless Operator
 
 ## Prerequisites
 
 In order to bootstrap this repository you must have the following tools installed:
 
-`oc`
-`kustomize`
+- `oc`
+- `kustomize`
 
 ## Bootstrapping a Cluster
 
