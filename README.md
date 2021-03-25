@@ -19,6 +19,7 @@ The intention is that this will allow you to easily bootstrap an ArgoCD instance
 In order to bootstrap this repository you must have the following tools installed:
 
 - `oc`
+
 - `kustomize`
 
 ## Bootstrapping a Cluster
