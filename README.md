@@ -26,6 +26,8 @@ In order to bootstrap this repository you must have the following tools installe
 
 Login to your cluster using `oc`.
 
+Clone this repository to your local environment.
+
 Execute the following script:
 
 ```sh
