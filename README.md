@@ -52,6 +52,14 @@ The cluster may take 10-15 minutes to finish installing and updating.
 
 The current sync operations may get stuck and fail to deploy all of the components (generally the `cluster-management-operator-resources` app).  To resolve the issue navigate to the ArgoCD Operator page under `Installed Operators` in the ArgoCD namespace.  Under `Application` tab delete the `cluster-management-operator-resouces` application.  ArgoCD should automatically recreate and restart the sync process.
 
+## Accessing Argo using the CLI
+
+To log into ArgoCD using the `argocd` cli tool run the following command:
+
+```sh
+argocd login --sso <argocd-route> --grpc-web
+```
+
 ## Future Enhacements Opportunties
 
 - Add and test additional OCP versions and platforms
