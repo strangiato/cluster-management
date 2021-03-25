@@ -16,11 +16,11 @@ The intention is that this will allow you to easily bootstrap an ArgoCD instance
 
 ## Prerequisites
 
-In order to bootstrap this repository you must have the following tools installed:
+In order to bootstrap this repository you must have the following:
 
 - `oc`
-
 - `kustomize`
+- Minimum 3 `worker nodes1`
 
 ## Bootstrapping a Cluster
 
