@@ -56,7 +56,7 @@ oc get crd | grep argo
 echo "Deploying Argo CD instance"
 
 # oc apply -k clusters/base/operators/argocd/argocd/
-kustomize build manifests/operator-instances/argocd/ | oc apply -f -
+kustomize build manifests/operator-resources/argocd/ | oc apply -f -
 
 echo "Waiting for Argo CD server to start..."
 
