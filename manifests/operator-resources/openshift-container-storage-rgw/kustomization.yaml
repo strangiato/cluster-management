@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: openshift-storage
 
 commonAnnotations:
-  argocd.argoproj.io/sync-wave: "5"
+  argocd.argoproj.io/sync-wave: "8"
 
 resources:
   - cephobjectstore.yaml
