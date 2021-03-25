@@ -23,16 +23,16 @@ patchesJson6902:
     group: argoproj.io
     version: v1alpha1
     kind: Application
-    name: cluster-management-operator-instances
+    name: cluster-management-operator-resources
     namespace: argocd
   path: patch-repo-and-revision.yaml
 - target:
     group: argoproj.io
     version: v1alpha1
     kind: Application
-    name: cluster-management-operator-instances
+    name: cluster-management-operator-resources
     namespace: argocd
-  path: patch-operator-instances-path.yaml
+  path: patch-operator-resources-path.yaml
 - target:
     group: argoproj.io
     version: v1alpha1
