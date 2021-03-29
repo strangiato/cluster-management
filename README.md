@@ -60,6 +60,23 @@ To log into ArgoCD using the `argocd` cli tool run the following command:
 argocd login --sso <argocd-route> --grpc-web
 ```
 
+## Updating the Admin Group
+
+Argo creates two groups in OpenShift to grant access and control inside of ArgoCD.
+
+- argocdadmins
+- argocdusers
+
+To add a user to a group run:
+
+```sh
+oc adm groups add-users <groupname> <username>
+```
+
+Once the user has been added to the group logout of Argo and log back in to apply the updated permissions.
+
+Can you validate that you have the correct permissions by going to `User Info` menu inside of Argo.
+
 ## Future Enhacements Opportunties
 
 - Add and test additional OCP versions and platforms
