@@ -33,6 +33,10 @@ do
     esac
 done
 
+repo_url='https://gitlab.consulting.redhat.com/intelligent-application-practice/xray/cluster-bootstrap.git'
+repo_username='temp'
+repo_password='temp'
+
 echo ""
 echo "Creating ArgoCD Project"
 # Avoids weird race condition where sometimes two installplans get created
@@ -65,6 +69,14 @@ sleep $SLEEP_SECONDS
 oc rollout status deploy/argocd-server -n argocd
 
 echo "Argo CD ready!"
+
+echo "Adding $(oc whoami) as Argo CD Admin"
+
+oc adm groups add-users argocdadmins $(oc whoami)
+
+echo "Adding repository to Argo CD"
+
+argocd repo add "${repo_url}" --username "${repo_username}" --password "${repo_password}"
 
 echo "Adding initial applications"
 
