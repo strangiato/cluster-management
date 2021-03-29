@@ -6,5 +6,6 @@ bases:
 - ../../../manifests/operators/kogito-operator/overlays/1.x
 - ../../../manifests/operators/opendatahub-operator/overlays/beta
 - ../../../manifests/operators/openshift-container-storage-operator
+- ../../../manifests/operators/openshift-operators-operator-group/
 - ../../../manifests/operators/openshift-pipelines-operator/
 - ../../../manifests/operators/openshift-serverless-operator/overlays/4.5
