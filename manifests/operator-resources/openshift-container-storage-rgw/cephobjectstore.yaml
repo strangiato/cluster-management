@@ -57,6 +57,6 @@ spec:
       algorithm: ""
       codingChunks: 0
       dataChunks: 0
-    failureDomain: zone
+    failureDomain: rack
     replicated:
       size: 3
